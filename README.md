@@ -112,7 +112,126 @@ Semua sudah dioptimalkan untuk tampilan sempurna di semua device!
 - Dark mode dengan CSS variables - tidak ada reload
 - Lazy loading siap untuk gambar (bisa ditambahkan)
 
-## 🛠️ Customization Lanjutan
+## � Cara Upload & Tambah Foto
+
+### 1. Siapkan Folder Foto
+```
+portfolio/
+├── index.html
+├── styles.css
+├── script.js
+├── images/              ← Buat folder ini
+│   ├── profile.jpg
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   └── project3.jpg
+└── README.md
+```
+
+### 2. Letakkan Foto di Folder `images/`
+Buat folder `images` di folder portfolio Anda, kemudian copy semua foto ke sana:
+- **Foto Profile** - buat dengan nama `profile.jpg` (ukuran ideal: 400x400px)
+- **Foto Proyek** - beri nama `project1.jpg`, `project2.jpg`, `project3.jpg` (ukuran ideal: 600x400px)
+
+### 3. Edit HTML untuk Menampilkan Foto
+
+**A. Tambah Foto Profile di About Section:**
+```html
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Foto Profil" class="profile-img">
+            </div>
+            <div class="about-text">
+                <!-- Konten teks -->
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+**B. Ganti Placeholder di Projects Section:**
+Cari baris yang berisi:
+```html
+<div class="placeholder-image">Project 1</div>
+```
+
+Ganti menjadi:
+```html
+<div class="project-image">
+    <img src="images/project1.jpg" alt="Project 1">
+</div>
+```
+
+Lakukan untuk semua project cards (project1, project2, project3).
+
+### 4. Tambah CSS untuk Foto Profile (Edit styles.css)
+```css
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+```
+
+### 5. Update Project Images (Edit styles.css)
+```css
+.project-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+```
+
+### 📏 Ukuran Foto Rekomendasi
+- **Foto Profile**: 400x400px (square)
+- **Foto Proyek**: 600x400px (landscape)
+- **Format**: JPG, PNG (JPG lebih ringan)
+- **Size**: Maksimal 500KB per foto untuk loading cepat
+
+### 🖼️ Contoh Lengkap Section About dengan Foto
+```html
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Fachreza Putra Prasetyo" class="profile-img">
+            </div>
+            <div class="about-text">
+                <p>
+                    Saya adalah seorang teknisi komputer yang passionate dalam memberikan solusi teknis terbaik...
+                </p>
+                <!-- Konten lainnya -->
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+---
+
+## �🛠️ Customization Lanjutan
 
 ### Tambah Section Baru
 ```html
