@@ -85,7 +85,7 @@ contactForm.addEventListener('submit', async (e) => {
     try {
         // Option 1: Using Formspree (Free service)
         // Create an account at https://formspree.io and get your form ID
-        const formspreeId = 'YOUR_FORMSPREE_ID'; // Replace with your Formspree ID
+        const formspreeId = 'https://formspree.io/f/mvzyqrql'; // Replace with your Formspree ID
         
         const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
             method: 'POST',
