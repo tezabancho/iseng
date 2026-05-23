@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#projects" class="nav-link">Proyek</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+                <li class="theme-toggle">
+                    <button id="themeBtn" class="theme-btn" title="Toggle dark mode">🌙</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Halo, saya nama Anda</h1>
+            <p class="hero-subtitle fade-in-delay">Full Stack Developer & Creative Designer</p>
+            <p class="hero-description fade-in-delay-2">Saya membangun solusi digital yang indah dan fungsional</p>
+            <a href="#projects" class="cta-button fade-in-delay-3">Lihat Proyek Saya</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Saya adalah seorang developer yang passionate tentang menciptakan pengalaman pengguna yang luar biasa. 
+                        Dengan lebih dari X tahun pengalaman, saya telah bekerja dengan berbagai teknologi dan klien di berbagai industri.
+                    </p>
+                    <p>
+                        Ketika tidak sedang coding, saya suka belajar teknologi baru, menulis blog, dan berkontribusi pada proyek open source.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Proyek</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Tahun</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Terbaru</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 1</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 1</h3>
+                        <p class="project-description">Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">Lihat Detail →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 2</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 2</h3>
+                        <p class="project-description">Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="#" class="project-link">Lihat Detail →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Project 3</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 3</h3>
+                        <p class="project-description">Deskripsi singkat tentang proyek ini dan teknologi yang digunakan.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <a href="#" class="project-link">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML & CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Vue.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Database</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Lainnya</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">Figma</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Mari Berbicara</h2>
+            <p class="contact-subtitle">Saya selalu terbuka untuk diskusi atau proyek baru. Hubungi saya!</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="name" 
+                        placeholder="Nama Anda" 
+                        required
+                        class="form-input"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        placeholder="Email Anda" 
+                        required
+                        class="form-input"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <textarea 
+                        id="message" 
+                        placeholder="Pesan Anda" 
+                        rows="5"
+                        required
+                        class="form-input"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Kirim Pesan</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+
+            <div class="contact-info">
+                <a href="mailto:email@example.com" class="contact-link">📧 email@example.com</a>
+                <a href="tel:+1234567890" class="contact-link">📱 +62 xxx-xxxx-xxxx</a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">💼 LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="contact-link">🐙 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Nama Anda. All rights reserved.</p>
+            <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
